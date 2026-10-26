@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <!-- getElementById() -->
+    <script type="text/javascript">
+        function checkingForm(){
+           var uname = document.getElementById("userName");
+           var pass = document.getElementById("Password");
+           if(uname.value == "admin" && pass.value == "123456"){
+            document.write("Valid User!");
+           }
+           else{
+            document.write("Invalid user!");
+           }
+        }
+        function readMore(){
+            var mydiv = document.getElementById("myDiv")
+            mydiv.innerHTML +=  "This is detailed information" 
+        }
+    </script>
+</head>
+<body>
+    <div id="myDiv">
+        <h2>Hello World</h2>
+    </div>
+    <input type="button" value="Read More" onclick="readMore()"></br><br>
+    <input type="text" id="userName" placeholder="Enter your username here "><br><br>
+    <input type="password" id="Password" placeholder="Enter a valid password"><br><br>
+    <input type="button" value="Check" onclick="checkingForm()">
+
+</body>
+</html>
