@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script type="text/javascript">
         var a = "Neel";
         var b = "Gadher";
 
         var c = a + " " + b + "</br>";
-        
+
         document.write("C is made of a : Neel and b : Gadher </br> c : " + c)
-        
+
         //length function
         document.write("Length of the String is " + c.length + "</br>");
         //charAt function
@@ -21,29 +23,30 @@
         //indexOf first index of accurance
         document.write("indexOf('d') : " + c.indexOf('d') + "</br>");
         //there is many chances that we have 3 same char what is we have to find third one
-        document.write("indexof('e') but third : " + c.indexOf('c',4) + "</br>")//here second argument work that skip 4 index to find first e
+        document.write("indexof('e') but third : " + c.indexOf('c', 4) + "</br>")//here second argument work that skip 4 index to find first e
         //lastIndexOf()
-        document.write("lastIndexOf('e') : " + c.lastIndexOf('e') + "</br>" )
+        document.write("lastIndexOf('e') : " + c.lastIndexOf('e') + "</br>")
         //subString
-        document.write("substring(2,5) : " + c.substring(2,5) + "</br>Check Diffrence For subStr</br> ")//first para is for starting index for substring and wont take 5th index (till 5).
+        document.write("substring(2,5) : " + c.substring(2, 5) + "</br>Check Diffrence For subStr</br> ")//first para is for starting index for substring and wont take 5th index (till 5).
         //subStr
-        document.write("substr(2,5) : : " + c.substr(2,5) + "</br>")//first para take same as substring but it will take length as second para strating from 2 index i want 5 char substring
+        document.write("substr(2,5) : : " + c.substr(2, 5) + "</br>")//first para take same as substring but it will take length as second para strating from 2 index i want 5 char substring
 
         //replace()
-        var b = b.replace('Gadher','Prajapati') 
+        var b = b.replace('Gadher', 'Prajapati')
         document.write("b.replace('Gadher','Prajapati') Now b is : " + b + "</br>")// it is saying that i want to change first param part from b string and replace it with second param.
         //replacing one char 
-        var a = a.replace('e','#');
+        var a = a.replace('e', '#');
         document.write("a.replace('e','#') : " + a + "</br>")
         //replace all char which is e
-        var a = a.replace(/e/g,"#");
+        var a = a.replace(/e/g, "#");
         document.write("a.replace(/e/g,'#') : " + a + "</br>")
-        
+
         //toLowerCase()
-        document.write("b.toLowerCase() : " + b.toLowerCase() )
+        document.write("b.toLowerCase() : " + b.toLowerCase())
         //toUpperCase()
         document.write("b.toUpperCase() : " + b.toUpperCase() + "</br>")
 
     </script>
 </body>
+
 </html>
