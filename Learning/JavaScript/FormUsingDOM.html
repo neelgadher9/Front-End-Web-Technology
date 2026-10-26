@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Using DOM</title>
+    <script type="text/javascript">
+        function validateForm(){
+            var f = document.forms["myForm"];
+            var u = f.UserName
+            var p = f.PassWord;
+            if(u.value == "admin" && p.value == "123456"){
+                console.log("Valid User ! ");
+            }
+            else{
+                alert("Password or Username is incorrect ! ");
+                console.log("Invalid User ! ");
+            }
+        }
+    </script>
+    <style>
+        .FormValidate{
+            height: 27vh;
+            width: 80vw;
+            justify-items: center;
+            align-items: center;
+            border: 1px solid black;
+            background-color: grey;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="FormValidate" align="center">
+    <h1 align="center">Validation Using DOM</h1>
+
+    <form name="myForm"action="">
+        <label for="UserName">Username : </label><input type="text" id="UserName" placeholder="Enter a valid username"><br><br>
+        <label for="Password">Password : </label><input type="password" id="PassWord" placeholder="Enter a valid password"><br><br>
+        <input type="button" value="Check" onClick="validateForm()">
+
+    </form>
+    </div>
+</body>
+</html>
