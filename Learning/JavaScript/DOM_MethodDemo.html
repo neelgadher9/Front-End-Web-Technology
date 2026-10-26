@@ -5,9 +5,9 @@
     <!-- getElementById() -->
     <script type="text/javascript">
         function checkingForm(){
-           var uname = document.getElementById("userName");
-           var pass = document.getElementById("Password");
-           if(uname.value == "admin" && pass.value == "123456"){
+           var uname1 = document.getElementById("userName1");
+           var pass1 = document.getElementById("Password1");
+           if(uname1.value == "admin1" && pass1.value == "123456"){
             document.write("Valid User!");
            }
            else{
@@ -18,16 +18,52 @@
             var mydiv = document.getElementById("myDiv")
             mydiv.innerHTML +=  "This is detailed information" 
         }
+    // getElementsByName()
+        function checkingViaName(){
+            var uname2 = document.getElementsByName("userName2")[0];
+            var pass2 = document.getElementsByName("Password2")[0];
+            if(uname2.value == "admin2" && pass2.value == "1234567"){
+                document.write("Valid User!");
+            }
+            else{
+                document.write("Invalid user!");
+            }
+        }
+        // getElementsByTagName()
+        function checkingViaTagName(){
+            var uname3 = document.getElementsByTagName("input")[7];
+            var pass3 = document.getElementsByTagName("input")[8];
+            if(uname3.value == "admin3" && pass3.value == "12345678"){
+                document.write("Valid User!");
+            }
+            else{
+                document.write("Invalid user!");
+            }
+        }
     </script>
 </head>
 <body>
+
     <div id="myDiv">
         <h2>Hello World</h2>
+        <h4>For division</h4>
     </div>
-    <input type="button" value="Read More" onclick="readMore()"></br><br>
-    <input type="text" id="userName" placeholder="Enter your username here "><br><br>
-    <input type="password" id="Password" placeholder="Enter a valid password"><br><br>
-    <input type="button" value="Check" onclick="checkingForm()">
 
+    <input type="button" value="Read More" onclick="readMore()"></br><br>
+
+    <h4>Using getElementById()</h4>
+    <input type="text" id="userName1" placeholder="Enter your username here "><br><br>
+    <input type="password" id="Password1" placeholder="Enter a valid password"><br><br>
+    <input type="button" value="Check" onclick="checkingForm()"> <br><br>
+
+    <h4>Using getElementsByName()</h4>
+    <input type="text" name="userName2" placeholder="Enter your username here "><br><br>
+    <input type="password" name="Password2" placeholder="Enter a valid password"><br><br>
+    <input type="button" value="Check" onclick="checkingViaName()"> <br><br>
+
+    <h4>Using getElementsByTagName()</h4>
+    <input type="text" name="userName3" placeholder="Enter your username here "><br><br>
+    <input type="password" name="Password3" placeholder="Enter a valid password"><br><br>
+    <input type="button" value="Check" onclick="checkingViaTagName()">
 </body>
 </html>
