@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        .myClass{
+            height: 20vw;
+            background-color: black;
+        }
+    </style>
+    <script>
+        function changeSize(){
+            var d1 = document.getElementById('myClass');
+            d1.style.width = "30vw";
+        }
+    </script>
+</head>
+<body>
+    <div class="myClass" id="myClass" style="width: 20vw;"></div>
+    <input type="button" value="change" onclick="changeSize()">
+</body>
+</html>
