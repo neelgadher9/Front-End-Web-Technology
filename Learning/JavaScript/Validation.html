@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Using DOM</title>
+    <script type="text/javascript">
+        function validateForm(){
+            var e = document.getElementById('E_mail').value;
+            
+            var pattern = "^[\\w-_\.]*[\\w-_\.]\@[\\w]\.+[\\w]+[\\w]$";
+            var regexp = new RegExp(pattern);
+
+            var r = document.getElementById("result");
+            if(regexp.test(e)){
+                r.innerHTML = "Valid Email Format";
+            }
+            else{
+                r.innerHTML = "Invalid Email Format";
+            }
+        }
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <h1 align="center">Validation Using DOM</h1>
+
+    <form name="myForm"action="">
+        <label for="E-mail">E-mail : </label>
+        <input type="text" id="E_mail" ><br><br>
+        <input type="button" value="Check" onclick="validateForm()">
+
+    </form>
+    
+    <div id="result"><br><br></div>
+</body>
+</html>
