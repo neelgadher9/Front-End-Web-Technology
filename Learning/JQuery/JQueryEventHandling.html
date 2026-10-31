@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myH1">Hello World with id</h1>
+    <h1 class="otherH1">Hello World with class</h1>
+    <button id="myBtn">Click</button>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+    <script>
+        
+            $("#myBtn").mouseout(()=>{
+                $("#myH1").hide();
+            });
+        
+    </script>
+
+</body>
+</html>
