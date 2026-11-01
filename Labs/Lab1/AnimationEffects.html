@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .redToYellow {
+            height: 50vh;
+            width: 50vh;
+            color: white;
+            background-color: red;
+            animation-name: redToYellowAni, movingDivAni;
+            animation-duration: 5s, 5s;
+            animation-iteration-count: infinite, infinite;
+            animation-delay: 2s,2s;
+            animation-direction: alternate,alternate;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        @keyframes redToYellowAni {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: Yellow;
+                color: black;
+            }
+        }
+
+        @keyframes movingDivAni {
+            0% {
+                margin-top: 0;
+                margin-left: 0;
+            }
+
+            25% {
+                margin-top: 0;
+                margin-left: 74vw;
+            }
+
+            50% {
+                margin-top: 50vh;
+                margin-left: 74vw;
+            }
+
+            75% {
+                margin-top: 50vh;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="redToYellow">
+
+        <br><br><br><br>
+        &nbsp;&nbsp;&nbsp;I am changing my colour continuosly..... <br>&nbsp;&nbsp;&nbsp; & Also moving around the screen....
+
+    </div>
+
+</body>
+
+</html>
