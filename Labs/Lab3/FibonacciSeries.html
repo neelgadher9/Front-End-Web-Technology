@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Enter a n for fibonacci series : "));
+        if(a>=1){document.write("1 , ")}
+        if(a>=2){document.write("2 , ")}
+        let first = 1;
+        let second = 2;
+        let element = 0;
+        for(i=3;i<a;i++){
+            element = first+second;
+            document.write(element+" , ");
+            first=second;
+            second=element;
+        }
+        element=first+second;
+        document.write(element);
+        //1,2,3,5,8,13
+    </script>
+</body>
+</html>
