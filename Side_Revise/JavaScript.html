@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="ExternalToPop.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //initialize string and concate both at the time...
+        myString = "I " + "am " + "a" + " " + "good Programmer."
+        //write on html page(into the document...)
+        document.write("myString : " + myString + "</br></br>") 
+        //String Functions
+
+        document.write("---------------------------------------------------------------------------</br> String Logics</br> ---------------------------------------------------------------------------</br></br>")
+        //1.Write length of string into document...
+        document.write("myString.length = " + myString.length + "</br></br>")
+        //All Functions for Strings...
+        document.write("myString.charAt(5) = "+ myString.charAt(5) + "</br></br>")
+        document.write("myString.indexOf('a') = " + myString.indexOf('a') + "</br></br>")
+        document.write("myString.lastIndexOf('a') = " + myString.lastIndexOf('a') + "</br></br>")
+        document.write("myString.substring(5,12) = " + myString.substring(5,12) + "</br></br>")
+        document.write("myString.substr(5,12) = " + myString.substr(5,12) + "</br></br>")
+        document.write("myString.toLowerCase() = "+ myString.toLowerCase() + "</br></br>")
+        document.write("myString.toUpperCase() = "+ myString.toUpperCase() + "</br></br></br>")
+        
+        document.write("---------------------------------------------------------------------------</br> Replace Logics</br> ---------------------------------------------------------------------------</br></br>")
+        //for use replace you have to define new string and put it into that...
+        let newString1 = myString.replace("good","best")
+        document.write("let newString = myString.replace('good','best') </br></br> Replaced String : " + newString1 +"</br></br>")
+        //replacing one char 
+        var newString2 = myString.replace('a', '#');
+        document.write("var newString2 = myString.replace('a', '#'); </br></br> Replaced String :  " + newString2 + "</br></br>")
+        //replace all char which is e
+        var newString3 = myString.replace(/a/g, "#");
+        document.write("var newString3 = myString.replace(/a/g, '#'); </br></br> Replaced String : " + newString3 + "</br></br></br>")
+
+        //Pop-Up Boxes is easy so skiping it...
+
+        //math object
+        document.write("---------------------------------------------------------------------------</br> Math Object</br> ---------------------------------------------------------------------------</br></br>")
+
+        
+
+        //external javascript where i also learn about functions...
+        document.write("---------------------------------------------------------------------------</br> External JS Call</br> ---------------------------------------------------------------------------</br></br>")
+
+    </script>
+    <input type="button" value="Click for External JS" onclick="toPop()" style="height: 5vh;width: 20vw;">
+    <p id="counting"></p>
+    <input type="button" value="Click for Count 1 to 10" onclick="toCount10()" style="height: 5vh;width: 20vw;">
+    
+</body>
+</html>
