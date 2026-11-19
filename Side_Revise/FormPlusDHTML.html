@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDandiyaSpace {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #myForm {
+            align-items: center;
+            height: 40vh;
+            width: 50vw;
+            background-color: grey;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+    <script type="text/javascript">
+        function validatePlusDandiya() {
+            let username = document.getElementById("username").value
+            let password = document.getElementById("password").value
+
+            if (username == "a" && password == "b") {
+                Dandiya(document.getElementById("myDandiyaSpace"), duration = 3000)
+            }
+            else {
+                document.getElementById("write").innerHTML = "Brother You dont want dandiya ? "
+            }
+        }
+        function Dandiya(myDandiyaSpace, duration = 300) {
+            //i take this from AI because we didnt studied about this
+            myDandiyaSpace.animate(
+                [
+                    { backgroundColor: 'rgb(255, 0, 0)' }, // Red
+                    { backgroundColor: 'rgb(0, 255, 0)' }, // Green
+                    { backgroundColor: 'rgb(0, 0, 255)' }, // Blue
+                    { backgroundColor: 'rgb(255, 0, 0)' }  // Back to Red for a smooth loop
+                ],
+                {
+                    duration: duration,
+                    iterations: Infinity // Loops forever
+                }
+            );
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myDandiyaSpace">
+        <form id="myForm" align="center" action="">
+            <br><br><br>
+            <label for="username">Username : </label>
+            <input type="text" id="username"><br><br><br>
+
+            <label for="password">Password : </label>
+            <input type="text" id="password"><br><br><br>
+
+            <input type="button" onclick="validatePlusDandiya()" value="If Its Correct You got DiscoDandiya..."
+                style="height: 5vh;width: 20vw;">
+        </form>
+        <p id="write"></p>
+    </div>
+</body>
+
+</html>
