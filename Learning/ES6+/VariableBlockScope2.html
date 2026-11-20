@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //now we learn about var let and const in it...
+        //var let const -> it defines block scope for variable
+
+        a = 10;
+
+        function abc() {
+            var a = 20;//var has a function scope
+            //var defines that this is various from other a for the function...
+            if (true) {//true beacuse i have to see block
+                let a = 30 // let has a block scope... (only for {})
+                document.write("Inside block A: " + a + "<br/>")
+            }
+            document.write("Inside Function A : " + a + "<br/>")
+        }
+
+        abc();
+        document.write("Outside A : " + a)
+    </script>
+</body>
+
+</html>
