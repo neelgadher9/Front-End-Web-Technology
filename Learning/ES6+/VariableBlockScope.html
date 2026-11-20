@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+    a = 10;
+
+    function abc(){
+        a = 20;
+        document.write("Inside A : " + a + "<br/>")
+    } // here i am changing value of a to 20 so in function call of abc() it will print ofc 20...
+    abc();//now i called so it will print but what about outside the function what is the value of a after calling function where it changes the value of a...
+    document.write("Outside A : " + a) 
+    //checking that after function call whats the value of a...
+    //and suprisingly we see that after calling a's value is changed based on function!!!
+    //if i didnt call function the value of a it will be remaining same as 10...
+    </script>
+</body>
+</html>
