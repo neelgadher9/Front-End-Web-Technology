@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        const a = 10;
+        a = a + 10; //it is simple that we learn in block scope that const defined variable that you cannot change during the program ut will generate and error and here you can see in console.log ...
+        console.log(a)
+        */
+
+        //An Interesting Thing!!!!
+         const student1 = {
+            name : "Neel",
+            roll : 101 , 
+            department : "CSE"
+         } //so here object is defined under the const ...
+         student1.name = "Neel Gadher"; //here i am changing the property under the const object ...
+         /*why it will work just because we are not changing student1 we are chaning one of there property so it will work ...*/
+
+         console.log(student1)
+         //twist something
+
+         /*if we did like student1 directly with = or assignment even if you did it same to same like example :*/
+         /*
+         student1 = {
+            name : "Neel",
+            roll : 101 , 
+            department : "CSE"
+        }
+            console.log(student1)
+            it will give you an error because you are directly giving assignment operation to const object...
+            object is contant not the property ...
+         */
+</script>
+</body>
+</html>
